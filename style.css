@@ -10,19 +10,208 @@ html {
 body {
     font-family: "Noto Sans", sans-serif;
     font-size: 0.8rem;
+    color: #222;
+    background-color: bisque;
 }
 
-header {
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+header,
+#px,
+#em,
+#rem,
+#vh,
+#vw,
+#ch {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: auto;
     max-width: 1024px;
     text-align: center;
+    background-color: white;
+}
+
+header,
+#px,
+#em,
+#rem,
+#vh,
+#vw,
+#ch {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 40px;
 }
 
 header h1 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+header small {
+    font-weight: 700;
+}
+
+.header {
+    background-color: darkorange;
+    color: white;
+}
+
+.header,
+.content {
+    width: 500px;
+}
+
+header,
+#px,
+#em,
+#rem,
+#vh,
+#vw,
+#ch {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #f1f1f1;
+}
+
+#px .header,
+#em .header,
+#rem .header,
+#vh .header,
+#vw .header,
+#ch .header {
+    border: 2px solid magenta;
+    padding: 10px 0;
+}
+
+#px .content,
+#em .content,
+#rem .content,
+#vh .content,
+#vw .content,
+#ch .content {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#px .content .box,
+#px .content .box2,
+#px .content .box3 {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: blueviolet;
+}
+
+#px .content .box {
+    width: 100px;
+    height: 100px;
+}
+
+#px .content .box2 {
+    width: 50px;
+    height: 50px;
+}
+
+#px .content .box3 {
+    width: 75px;
+    height: 75px;
+}
+
+#em .content,
+#rem .content,
+#vw .content,
+#ch .content {
+    flex-direction: column;
+}
+
+#em .content {
+    font-size: 25px;
+}
+
+#em .content .para1,
+#em .content .para2,
+#em .content .para3,
+#rem .content .para1,
+#rem .content .para2,
+#rem .content .para3 {
+    background-color: blueviolet;
+    font-weight: bold;
+    color: white;
+}
+
+#em .content .para2 {
+    font-size: 2em;
+}
+
+#em .content .para3 {
+    font-size: 50px;
+}
+
+#rem .content .para2 {
+    font-size: 0.5rem;
+}
+
+#rem .content .para3 {
+    font-size: 10px;
+}
+
+#vh .content {
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#vw .content {
+    width: 50vw;
+}
+
+#ch .content {
+    width: 70ch;
+}
+
+#vh .content,
+#vw .content,
+#ch .content {
+    box-sizing: border-box;
+    background-color: blueviolet;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+}
+
+.grey-border {
+    border: 1px solid #999;
+}
+
+.border-radius-5px {
+    border-radius: 5px;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px !important;
 }

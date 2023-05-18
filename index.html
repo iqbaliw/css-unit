@@ -16,7 +16,102 @@
     <body>
         <header>
             <h1>The CSS Unit</h1>
-            <small>by: <a href="https://github.com/iqbaliw">iqbaliw</a></small>
+            <small
+                >by:
+                <a href="https://github.com/iqbaliw" target="_blank">iqbaliw</a>
+                | repo:
+                <a href="https://github.com/iqbaliw/css-unit" target="_blank"
+                    >github</a
+                >
+                | reference:
+                <a
+                    href="https://www.youtube.com/watch?v=fzZTvLmmTzM"
+                    target="_blank"
+                    >slaying the dragon</a
+                ></small
+            >
         </header>
+
+        <section id="px">
+            <div class="header mb10 border-radius-5px">
+                <h2>px</h2>
+            </div>
+            <div class="content">
+                <div class="box">a box 100x100<br />px</div>
+                <div class="box2">a box 50x50<br />px</div>
+                <div class="box3">a box 75x75<br />px</div>
+            </div>
+        </section>
+
+        <section id="em">
+            <div class="header mb10 border-radius-5px">
+                <h2>em</h2>
+            </div>
+            <div class="content">
+                <p class="border-radius-5px para1 grey-border p10 mb10">
+                    This parent element had 25px of font-size.
+                </p>
+                <p class="border-radius-5px para2 grey-border p10 mb10">
+                    This text is 2em size of its parent, which is 25px. So, the
+                    size is 50px.
+                </p>
+                <p class="border-radius-5px para3 grey-border p10">
+                    This text is 50px.
+                </p>
+            </div>
+        </section>
+
+        <section id="rem">
+            <div class="header mb10 border-radius-5px">
+                <h2>rem</h2>
+            </div>
+            <div class="content">
+                <p class="border-radius-5px para1 grey-border p10 mb10">
+                    This root html element had 20px of font-size.
+                </p>
+                <p class="border-radius-5px para2 grey-border p10 mb10">
+                    This text is 0.5rem size of root html element, which is
+                    20px. So, the size is 10px.
+                </p>
+                <p class="border-radius-5px para3 grey-border p10">
+                    This text is 10px.
+                </p>
+            </div>
+        </section>
+
+        <section id="vh">
+            <div class="header mb20 border-radius-5px">
+                <h2>vh</h2>
+            </div>
+            <div class="content border-radius-5px p10">
+                <p>This box has 50vh of height</p>
+            </div>
+        </section>
+
+        <section id="vw">
+            <div class="header mb20 border-radius-5px">
+                <h2>vw</h2>
+            </div>
+            <div class="content border-radius-5px">
+                <p>This box has 50vw of width</p>
+            </div>
+        </section>
+
+        <section id="ch" class="mb40">
+            <div class="header mb20 border-radius-5px">
+                <h2>ch</h2>
+            </div>
+            <div class="content border-radius-5px p10">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos doloribus architecto culpa dignissimos dolorum.
+                    Inventore alias odio minus labore perspiciatis suscipit
+                    fugit? Corrupti, suscipit molestias? In necessitatibus
+                    dolorem error quibusdam quo est ut tenetur quia aut beatae,
+                    quisquam pariatur blanditiis inventore sequi. Aut ipsa,
+                    eveniet alias accusamus reiciendis quidem illo.
+                </p>
+            </div>
+        </section>
     </body>
 </html>
